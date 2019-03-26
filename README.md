@@ -7,25 +7,32 @@
    Adapun langkah-langkah nya adalah sebagai berikut:
    
    a. Load data ke dalam pandas dataframe.
+      
       Dalam hal ini, data train dan data test diupload ke dalam bentuk pandas dataframe.
       
    b. Check data train dan data test.
+      
       Dalam step ini, baik data train maupun data test dicek seperti apa datanya mulai dari dimensi (jumlah kolom dan baris), type data di setiap kolom sampai summary statistic dari kedua data tersebut.
 	  
-   c. Check & Handle Missing values
+   c. Check & Handle Missing values.
+      
       Mengecek apakah di dalam kedua data tersebut ada values yang kosong atau tidak. Seperti diketahui bahwa data-data yang kosong 
 akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modelling, sehingga data-data kosong tersebutperlu diisi atau dibuang namun membuang data sangat tidak dianjurkan. Data banyak method yang dapat digunakan dalam mengisi data kosong, dalam hal ini data kosong pada variable-variable berjenis kategory akan diisi oleh modus  dari kategory tersebut sedangkan untuk variable-variable numeric makan data yang kosong akan diisi oleh nilai rata-ratanya. Dalam case ini karena semua variable adalah variable numeric maka data yang hilang diisi oleh nilai rata-ratanya.
 
    d. EDA (Exploratory Data Analyst)
+      
       Pada langkah ini dibuat visualisasi dari setiap variable dan bagaimana visualisasinya terhadap target. Langkah ini dilakukan untuk memperoleh insight dari data tersebut, dalam hal ini data train.
       
    e. Check & Handle Outlier
-      Outlier bisa juga mempengaruhi performa dari model yang dibuat. Oleh karena itu, dalam step ini semua variable numeric yang memiliki outlier diganti dengan nilai upper side atau lower sidenya. 
+     
+     Outlier bisa juga mempengaruhi performa dari model yang dibuat. Oleh karena itu, dalam step ini semua variable numeric yang memiliki outlier diganti dengan nilai upper side atau lower sidenya. 
       
    f. Split data train into train and test
-      Pada step ini, data train displit menjadi data train dan data test dengan proporsi 0.7 untuk data train dan 0.3 untuk data test. Data train yang sebanyak 0.7 tersebut akan digunakan untuk membuat model sedangkan 0.3 data test tadi akan digunakan sebagai validasi saat mengevaluasi performa model.
+     
+     Pada step ini, data train displit menjadi data train dan data test dengan proporsi 0.7 untuk data train dan 0.3 untuk data test. Data train yang sebanyak 0.7 tersebut akan digunakan untuk membuat model sedangkan 0.3 data test tadi akan digunakan sebagai validasi saat mengevaluasi performa model.
       
    g. Modelling, Prediksi dan Evaluation
+      
       Algoritma machine learning yang digunakan untuk modelling dalam case ini ada 4 yaitu:
 	  - Decision Tree
 	  - Random Forest
@@ -34,6 +41,7 @@ akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modell
       Sedang metric yang digunakan untuk mengevaluasi performa model adalah ROC dan confusion matrix (accuracy, precision dan recall)
       
    h. Implemantasi model pada data test
+      
       Ini merupakan tahap terakhir, pada tahap ini dilakukan prediksi target pada data test menggunakan model yang memiliki performa paling baik. Hasil prediksi tersebut disimpan ke dalam file .csv
 
 ## Jawaban Pertanyaan.
