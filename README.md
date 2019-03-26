@@ -1,5 +1,5 @@
 **Name: Syifa Silfiyana S (syifa.silfiyana@gmail.com)**
-**Test_Soal : Assessment_Recruitment_Pro_Hire_DSC_Telkom**
+
 
 
 ## Langkah-langkah pemecahan masalah
