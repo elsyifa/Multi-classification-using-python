@@ -5,26 +5,33 @@
 ## Langkah-langkah pemecahan masalah
    Untuk memprediksi target pada data test ini bahasa pemprograman yang digunakan adalah python dan tool yang digunakan adalah jupyter notebook. Adapun langkah-langkah nya adalah sebagai berikut:
    
-   a. Load data ke dalam pandas dataframe.
+   a. Load data ke dalam pandas dataframe
+   
    Dalam hal ini, data train dan data test diupload ke dalam bentuk pandas dataframe.
       
-   b. Check data train dan data test.
+   b. Check data train dan data test
+   
    Dalam step ini, baik data train maupun data test dicek seperti apa datanya mulai dari dimensi (jumlah kolom dan baris), type data di setiap kolom sampai summary statistic dari kedua data tersebut.
 	  
    c. Check & Handle Missing values
+   
    Mengecek apakah di dalam kedua data tersebut ada values yang kosong atau tidak. Seperti diketahui bahwa data-data yang kosong 
 akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modelling, sehingga data-data kosong tersebutperlu diisi atau dibuang namun membuang data sangat tidak dianjurkan. Data banyak method yang dapat digunakan dalam mengisi data kosong, dalam hal ini data kosong pada variable-variable berjenis kategory akan diisi oleh modus  dari kategory tersebut sedangkan untuk variable-variable numeric makan data yang kosong akan diisi oleh nilai rata-ratanya. Dalam case ini karena semua variable adalah variable numeric maka data yang hilang diisi oleh nilai rata-ratanya.
 
    d. EDA (Exploratory Data Analyst)
+   
    Pada langkah ini dibuat visualisasi dari setiap variable dan bagaimana visualisasinya terhadap target. Langkah ini dilakukan untuk memperoleh insight dari data tersebut, dalam hal ini data train.
       
    e. Check & Handle Outlier
+   
    Outlier bisa juga mempengaruhi performa dari model yang dibuat. Oleh karena itu, dalam step ini semua variable numeric yang memiliki outlier diganti dengan nilai upper side atau lower sidenya. 
       
    f. Split data train into train and test
+   
    Pada step ini, data train displit menjadi data train dan data test dengan proporsi 0.7 untuk data train dan 0.3 untuk data test. Data train yang sebanyak 0.7 tersebut akan digunakan untuk membuat model sedangkan 0.3 data test tadi akan digunakan sebagai validasi saat mengevaluasi performa model.
       
    g. Modelling, Prediksi dan Evaluation
+   
    Algoritma machine learning yang digunakan untuk modelling dalam case ini ada 4 yaitu:
 	  - Decision Tree
 	  - Random Forest
@@ -33,13 +40,16 @@ akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modell
     Sedang metric yang digunakan untuk mengevaluasi performa model adalah ROC dan confusion matrix (accuracy, precision dan recall)
       
    h. Implemantasi model pada data test
+   
    Ini merupakan tahap terakhir, pada tahap ini dilakukan prediksi target pada data test menggunakan model yang memiliki performa paling baik. Hasil prediksi tersebut disimpan ke dalam file .csv
 
 ## Jawaban Pertanyaan.
-   1. Algoritma machine learning apa yang anda gunakan
+   1. Algoritma machine learning apa yang anda gunakan?
+   
    Jawab: Gradient Boosting
       
-   2. Apa alasan anda menggunakan algoritma tersebut
+   2. Apa alasan anda menggunakan algoritma tersebut?
+   
    Jawab: Gradient Boosting memiliki model evaluasi yang paling bagus dari semua model yang digunakan.
 	     Accuracy nya: 0.788, 
 	     Precision Average : 0.79, 
@@ -48,13 +58,16 @@ akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modell
 	     ROC curve of class 1: 0.90,
 	     ROC curve of class 2: 0.88
 	     
-   3. Variabel-variabel mana saja yang paling penting diantara (x_0, x_1, ..., x_19)
+   3. Variabel-variabel mana saja yang paling penting diantara (x_0, x_1, ..., x_19)?
+   
    Jawab: top 10 variable-variable yang paling penting adalah x_7, x_3, x_17, x_4, x_2, x_10, x_0, x_8, x_5, x_1
       
    4. Apakah anda menemukan variabel yang collinear/redundant? Variabel mana sajakah itu?
+   
    Jawab: ada, yaitu x_2, x_3, x_4, x_7, x_17
    
-   5. Metric apa sajakah yang anda gunakan untuk mengevaluasi performansi model? Berapa nilai dari tiap metric tersebut
+   5. Metric apa sajakah yang anda gunakan untuk mengevaluasi performansi model? Berapa nilai dari tiap metric tersebut?
+   
    Jawab: Matrix yang digunakan adalah ROC dan confusion matrix
    Gradient Boosting --> Accuracy nya: 0.78,
    Precision Average : 0.79,
