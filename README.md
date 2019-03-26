@@ -51,12 +51,13 @@ akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modell
    2. Apa alasan anda menggunakan algoritma tersebut?
    
    Jawab: Gradient Boosting memiliki model evaluasi yang paling bagus dari semua model yang digunakan.
-	     Accuracy nya: 0.788, 
-	     Precision Average : 0.79, 
-	     Recall Average : 0.79,
-	     ROC curve of class 0: 0.94,
-	     ROC curve of class 1: 0.90,
-	     ROC curve of class 2: 0.88
+   
+   Accuracy: 0.788, 
+   Precision Average : 0.79, 
+   Recall Average : 0.79,
+   ROC curve of class 0: 0.94,
+   ROC curve of class 1: 0.90,
+   ROC curve of class 2: 0.88
 	     
    3. Variabel-variabel mana saja yang paling penting diantara (x_0, x_1, ..., x_19)?
    
@@ -68,7 +69,8 @@ akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modell
    
    5. Metric apa sajakah yang anda gunakan untuk mengevaluasi performansi model? Berapa nilai dari tiap metric tersebut?
    
-   Jawab: Matrix yang digunakan adalah ROC dan confusion matrix
+   Jawab: Matrix yang digunakan adalah ROC dan confusion matrix.
+   
    Gradient Boosting --> Accuracy nya: 0.78,
    Precision Average : 0.79,
    Recall Average : 0.79,
