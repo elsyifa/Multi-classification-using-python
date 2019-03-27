@@ -539,5 +539,8 @@ my_prediction.columns=['target']
 #concat my_prediction with data test
 my_prediction_data=pd.concat([df_test,my_prediction],axis=1 )
 
+#Save my_prediction to csv and named it output.csv
+my_prediction_data.to_csv('E:/Me/output.csv', index=False, header=True)
+
 #Save my_prediction_data to csv and named it output2.csv
 my_prediction_data.to_csv('E:/Me/output2.csv', index=False, header=True)
