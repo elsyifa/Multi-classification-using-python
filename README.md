@@ -16,7 +16,7 @@
    c. Check & Handle Missing values
    
    Mengecek apakah di dalam kedua data tersebut ada values yang kosong atau tidak. Seperti diketahui bahwa data-data yang kosong 
-akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modelling, sehingga data-data kosong tersebutperlu diisi atau dibuang namun membuang data sangat tidak dianjurkan. Data banyak method yang dapat digunakan dalam mengisi data kosong, dalam hal ini data kosong pada variable-variable berjenis kategory akan diisi oleh modus  dari kategory tersebut sedangkan untuk variable-variable numeric makan data yang kosong akan diisi oleh nilai rata-ratanya. Dalam case ini karena semua variable adalah variable numeric maka data yang hilang diisi oleh nilai rata-ratanya.
+akan berpengaruh pada model prediksi dan bisa menyebabkan error pada saat modelling, sehingga data-data kosong tersebut perlu diisi atau dibuang namun membuang data sangat tidak dianjurkan. Ada banyak method yang dapat digunakan dalam mengisi data kosong, dalam hal ini data kosong pada variable-variable berjenis kategory akan diisi oleh modus  dari kategory tersebut sedangkan untuk variable-variable numeric makan data yang kosong akan diisi oleh nilai rata-ratanya. Dalam case ini karena semua variable adalah variable numeric maka data yang hilang diisi oleh nilai rata-ratanya.
 
    d. EDA (Exploratory Data Analyst)
    
